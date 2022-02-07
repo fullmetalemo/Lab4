@@ -1,3 +1,0 @@
-//well actually most of the "public" (it`s better to say ALL of the "public") are used bc Main
-// must have access to classes which are used in Main. Also, classes like
-// Characters and Objects need to have access to intterfaces and abstract classes.
