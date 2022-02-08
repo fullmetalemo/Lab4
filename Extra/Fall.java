@@ -24,18 +24,11 @@ public class Fall extends Objects {
             int x = Integer.parseInt(scanner.next());
             if (x == 0) {
                 System.out.println("Шар не падал... окей");
-            } else if (x < 0) {
+            } else if (x > 15 | x < 0) {
                 try {
                     throw new BalloonException();
                 } catch (BalloonException exception) {
-                    System.out.println("Шар не может взлететь в данной ситуации!");
-                    this.speed();
-                }
-            } else if (x > 15) {
-                try {
-                    throw new BalloonException();
-                } catch (BalloonException exception) {
-                    System.out.println("Слишком быстро...введите число меньше");
+                    System.out.println("Шар не может лететь с такой скоростью! Измените число.");
                     this.speed();
                 }
             } else {
